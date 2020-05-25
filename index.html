@@ -37,7 +37,11 @@
   </head>
   
   <style>
-    .fade-in {
+    .fade-in-slow {
+      animation: fadeIn ease 4s;
+      -webkit-animation: fadeIn ease 4s;
+    }
+    .fade-in-fast {
       animation: fadeIn ease 2s;
       -webkit-animation: fadeIn ease 2s;
     }
@@ -95,11 +99,14 @@
   </style>
   
   <body>
-    <div class="container container-small animated fade-in">
+    <div class="container container-small animated fade-in-fast">
         <h1>
           Nikhil V. Ravi
         </h1>
         <br>
+        <br>
+    </div>
+    <div class="container container-small animated fade-in-slow">
         <p>
           Hi! I'm Nikhil.
         </p>
